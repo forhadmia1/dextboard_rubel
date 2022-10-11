@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const RecentlyUpdateSocials = () => {
     return (
-        <div className='card-background'>
+        <div className='card-background px-[14px] py-[22px]'>
             <div className='flex justify-between items-center'>
                 <h2 className='text-[16px] font-semibold text-[#00E6FD]'>Daily Gainers</h2>
                 <Link className='text-[12px] font-normal text-white'>View all</Link>

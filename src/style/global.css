@@ -84,7 +84,9 @@ body {
   );
   border: 0.6px solid rgba(255, 255, 255, 0.26);
   border-radius: 8px;
-  padding: 14px 22px;
-  width: 376px;
-  height: 233px;
+}
+
+.btn-background {
+  background: linear-gradient(115.7deg, #0bb6d5 23.5%, #0085ff 86.42%);
+  border-radius: 6px;
 }
