@@ -1,0 +1,102 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.input-field {
+  padding: 0 5px;
+  width: 474px;
+  height: 46px;
+  left: 268px;
+  background: linear-gradient(
+    116.57deg,
+    rgba(255, 255, 255, 0.11) 23.89%,
+    rgba(0, 178, 255, 0.11) 90.56%
+  );
+  border: 0.6px solid rgba(255, 255, 255, 0.26);
+  border-radius: 8px;
+}
+.input-field input {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  background-color: transparent;
+}
+.input-field input:focus {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  outline: none;
+  box-shadow: none;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.right .icon {
+  width: 46px;
+  height: 46px;
+  display: block;
+  background: linear-gradient(
+    116.57deg,
+    rgba(255, 255, 255, 0.11) 23.89%,
+    rgba(0, 178, 255, 0.11) 90.56%
+  );
+  border: 0.6px solid rgba(255, 255, 255, 0.26);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eth-button-wrapper {
+  background: linear-gradient(
+    116.57deg,
+    rgba(255, 255, 255, 0.11) 23.89%,
+    rgba(0, 178, 255, 0.11) 90.56%
+  );
+  border: 0.6px solid rgba(255, 255, 255, 0.26);
+  border-radius: 6px;
+  display: flex;
+  height: 46px;
+  align-items: center;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.eth-icon {
+  background-color: #43a6ed;
+  box-shadow: 0px 4px 16px rgba(67, 166, 237, 0.4);
+  width: 27px;
+  height: 27px;
+  padding: 4px;
+  border-radius: 50%;
+}
+
+.eth-btn {
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.gas-btn {
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.active-eth-btn {
+  border-radius: 8px;
+  background: linear-gradient(
+    116.57deg,
+    rgba(255, 255, 255, 0.11) 23.89%,
+    rgba(0, 178, 255, 0.11) 90.56%
+  );
+}
