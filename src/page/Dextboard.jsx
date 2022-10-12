@@ -4,6 +4,8 @@ import DailyGainers from '../components/Dextboard/DailyGainers';
 import DailyLosers from '../components/Dextboard/DailyLosers';
 import HotPairs from '../components/Dextboard/HotPairs';
 import RecentlyUpdateSocials from '../components/Dextboard/RecentlyUpdateSocials';
+import rectengle1 from '../images/Rectangle 31.jpg'
+import rectengle2 from '../images/Rectangle 38.jpg'
 
 const Dextboard = () => {
     const [toggle, setToggle] = useState(false)
@@ -32,35 +34,61 @@ const Dextboard = () => {
                 <RecentlyUpdateSocials />
                 <HotPairs />
             </div>
-            <div className='mt-5 flex justify-between'>
-                <div className='flex card-background text-[12px] text-white gap-8 items-center px-5 py-3'>
-                    <Link className='btn-background px-2 py-1'>Pairs</Link>
-                    <Link>Daily Gainers</Link>
-                    <Link>Daily Losers</Link>
-                    <Link>Recently Update Socials</Link>
-                    <Link>FAVOURITE</Link>
+            <div className='grid grid-cols-4 mt-5 gap-5'>
+                <div className='col-span-3'>
+                    <div className='flex justify-between'>
+                        <div className='flex card-background text-[12px] text-white gap-8 items-center px-5 py-3'>
+                            <Link className='btn-background px-2 py-1'>Pairs</Link>
+                            <Link>Daily Gainers</Link>
+                            <Link>Daily Losers</Link>
+                            <Link>Recently Update Socials</Link>
+                            <Link>FAVOURITE</Link>
+                        </div>
+                        <div className='flex items-center gap-2'>
+                            <p className='text-[#7C86A2] text-sm'>Active in Last:</p>
+                            <div className=''>
+                                <select className='flex card-background text-[12px] text-white gap-8 items-center px-4 py-4 focus:outline-none' name="cars" id="cars">
+                                    <option className='text-black' value="volvo">All Exchanges</option>
+                                    <option className='text-black' value="saab">Saab</option>
+                                    <option className='text-black' value="opel">Opel</option>
+                                    <option className='text-black' value="audi">Audi</option>
+                                </select>
+                            </div>
+                            <p className='text-[#7C86A2] text-sm'>Active in Last:</p>
+                            <div className='flex card-background text-[12px] text-white gap-8 items-center px-4 py-3'>
+                                <Link className='btn-background px-2 py-1'>24h</Link>
+                                <Link>6h</Link>
+                                <Link>1h</Link>
+                                <Link>5m</Link>
+                            </div>
+                            <div className='card-background p-4 '>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.1554 0H0.84473C0.0952696 0 -0.282906 0.909351 0.248129 1.44039L6.74999 7.94324V15.1875C6.74999 15.4628 6.88433 15.7208 7.10989 15.8787L9.92239 17.8468C10.4773 18.2352 11.25 17.8415 11.25 17.1555V7.94324L17.752 1.44039C18.282 0.910406 17.9064 0 17.1554 0V0Z" fill="white" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div className='flex items-center gap-2'>
-                    <p className='text-[#7C86A2] text-sm'>Active in Last:</p>
-                    <div className=''>
-                        <select className='flex card-background text-[12px] text-white gap-8 items-center px-4 py-4 focus:outline-none' name="cars" id="cars">
-                            <option className='text-black' value="volvo">All Exchanges</option>
-                            <option className='text-black' value="saab">Saab</option>
-                            <option className='text-black' value="opel">Opel</option>
-                            <option className='text-black' value="audi">Audi</option>
-                        </select>
+                <div>
+                    <div className='card-background p-2 text-sm'>
+                        <img className='rounded-lg' src={rectengle1} alt="" />
+                        <div className='mt-3 flex justify-between'>
+                            <div>
+                                <p className='text-[#00E6FD]'>DEXTools Latest Release</p>
+                                <p className='text-white'>Latest changes in Version 2.3.4.0</p>
+                            </div>
+                            <button className='btn-background px-4'>View Details</button>
+                        </div>
                     </div>
-                    <p className='text-[#7C86A2] text-sm'>Active in Last:</p>
-                    <div className='flex card-background text-[12px] text-white gap-8 items-center px-4 py-3'>
-                        <Link className='btn-background px-2 py-1'>24h</Link>
-                        <Link>6h</Link>
-                        <Link>1h</Link>
-                        <Link>5m</Link>
-                    </div>
-                    <div className='card-background p-4 '>
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17.1554 0H0.84473C0.0952696 0 -0.282906 0.909351 0.248129 1.44039L6.74999 7.94324V15.1875C6.74999 15.4628 6.88433 15.7208 7.10989 15.8787L9.92239 17.8468C10.4773 18.2352 11.25 17.8415 11.25 17.1555V7.94324L17.752 1.44039C18.282 0.910406 17.9064 0 17.1554 0V0Z" fill="white" />
-                        </svg>
+                    <div className='card-background p-2 text-sm mt-5'>
+                        <img className='rounded-lg' src={rectengle2} alt="" />
+                        <div className='mt-3 flex justify-between'>
+                            <div>
+                                <p className='text-[#00E6FD]'>Sponser</p>
+                                <p className='text-white'>Glactic Quadrant</p>
+                            </div>
+                            <button className='btn-background px-4'>View Details</button>
+                        </div>
                     </div>
                 </div>
             </div>
