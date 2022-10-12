@@ -27,11 +27,11 @@ const DextboardTableRow = () => {
                     <span className='ml-1 text-[#FF4D5B]'>92,535.29%</span>
                 </div>
             </td>
-            <td >$281.64</td>
-            <td >$79.33M</td>
-            <td >39.79K</td>
-            <td >149.28M</td>
-            <td >$1402.67B</td>
+            <td className='text-white'>$281.64</td>
+            <td className='text-white'>$79.33M</td>
+            <td className='text-white'>39.79K</td>
+            <td className='text-white'>149.28M</td>
+            <td className='text-white'>$1402.67B</td>
             <td >
                 <div className='bg-[#184863] rounded-full h-6 w-6 flex justify-center items-center'>
                     <img src={vector} alt="" />
