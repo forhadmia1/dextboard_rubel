@@ -12,7 +12,7 @@ const Hotcard = () => {
             </div>
             <div className='flex justify-between mt-5'>
                 <div>
-                    <div className='flex items-center gap-1'>
+                    <div className='flex items-center gap-1 -ml-4'>
                         <img src={vector} alt="" />
                         <p className='text-white'>WETH<span className='text-[#9DA9C7]'>/BONE</span></p>
                     </div>

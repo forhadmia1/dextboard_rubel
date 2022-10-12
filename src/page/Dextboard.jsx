@@ -39,7 +39,7 @@ const Dextboard = () => {
             <div className='grid grid-cols-4 mt-5 gap-5'>
                 <div className='col-span-3'>
                     <div className='flex justify-between'>
-                        <div className='flex card-background text-[12px] text-white gap-8 items-center px-5 py-3'>
+                        <div className='flex card-background text-[12px] text-white gap-2 items-center px-5 py-3'>
                             <Link className='link-btn'>Pairs</Link>
                             <Link className='link-btn'>Daily Gainers</Link>
                             <Link className='link-btn'>Daily Losers</Link>
@@ -49,7 +49,7 @@ const Dextboard = () => {
                         <div className='flex items-center gap-2'>
                             <p className='text-[#7C86A2] text-sm'>Active in Last:</p>
                             <div className=''>
-                                <select className='flex card-background text-[12px] text-white gap-8 items-center px-4 py-4 focus:outline-none' name="cars" id="cars">
+                                <select className='flex card-background text-[12px] text-white items-center px-4 py-4 focus:outline-none' name="cars" id="cars">
                                     <option className='text-black' value="volvo">All Exchanges</option>
                                     <option className='text-black' value="saab">Saab</option>
                                     <option className='text-black' value="opel">Opel</option>
@@ -57,7 +57,7 @@ const Dextboard = () => {
                                 </select>
                             </div>
                             <p className='text-[#7C86A2] text-sm'>Active in Last:</p>
-                            <div className='flex card-background text-[12px] text-white gap-5 items-center px-4 py-3'>
+                            <div className='flex card-background text-[12px] text-white gap-2 items-center px-4 py-3'>
                                 <Link className='link-btn'>24h</Link>
                                 <Link className='link-btn'>6h</Link>
                                 <Link className='link-btn'>1h</Link>
