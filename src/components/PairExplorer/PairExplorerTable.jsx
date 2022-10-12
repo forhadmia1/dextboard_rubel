@@ -2,6 +2,7 @@ import React from 'react';
 import PairExplorerTableRow from './PairExplorerTableRow';
 
 const PairExplorerTable = () => {
+    const rows = [1, 2, 3, 4]
     return (
         <div className='mt-5'>
             <table className='card-background w-full text-sm text-[#00E6FD] border-collapse border-red-200'>
@@ -60,10 +61,9 @@ const PairExplorerTable = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    <PairExplorerTableRow />
-                    {/* {
-                        row.map(r => <DextboardTableRow />)
-                    } */}
+                    {
+                        rows.map(r => < PairExplorerTableRow />)
+                    }
                 </tbody>
             </table>
         </div >

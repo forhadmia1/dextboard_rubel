@@ -123,7 +123,7 @@ const Chartcard = () => {
                 </div>
             </div>
             <div className='mt-5'>
-                <img src={chart} alt="" />
+                <img className='w-full' src={chart} alt="" />
             </div>
         </div>
     );
