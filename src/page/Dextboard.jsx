@@ -40,11 +40,11 @@ const Dextboard = () => {
                 <div className='col-span-3'>
                     <div className='flex justify-between'>
                         <div className='flex card-background text-[12px] text-white gap-8 items-center px-5 py-3'>
-                            <Link className='btn-background px-2 py-1'>Pairs</Link>
-                            <Link>Daily Gainers</Link>
-                            <Link>Daily Losers</Link>
-                            <Link>Recently Update Socials</Link>
-                            <Link>FAVOURITE</Link>
+                            <Link className='link-btn'>Pairs</Link>
+                            <Link className='link-btn'>Daily Gainers</Link>
+                            <Link className='link-btn'>Daily Losers</Link>
+                            <Link className='link-btn'>Recently Update Socials</Link>
+                            <Link className='link-btn'>FAVOURITE</Link>
                         </div>
                         <div className='flex items-center gap-2'>
                             <p className='text-[#7C86A2] text-sm'>Active in Last:</p>
@@ -57,11 +57,11 @@ const Dextboard = () => {
                                 </select>
                             </div>
                             <p className='text-[#7C86A2] text-sm'>Active in Last:</p>
-                            <div className='flex card-background text-[12px] text-white gap-8 items-center px-4 py-3'>
-                                <Link className='btn-background px-2 py-1'>24h</Link>
-                                <Link>6h</Link>
-                                <Link>1h</Link>
-                                <Link>5m</Link>
+                            <div className='flex card-background text-[12px] text-white gap-5 items-center px-4 py-3'>
+                                <Link className='link-btn'>24h</Link>
+                                <Link className='link-btn'>6h</Link>
+                                <Link className='link-btn'>1h</Link>
+                                <Link className='link-btn'>5m</Link>
                             </div>
                             <div className='card-background p-4 '>
                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
