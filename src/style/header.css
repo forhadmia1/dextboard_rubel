@@ -1,12 +1,9 @@
 .header {
-  display: flex;
-  justify-content: space-between;
   padding-top: 20px;
 }
 
 .input-field {
   padding: 0 5px;
-  width: 474px;
   height: 46px;
   left: 268px;
   background: linear-gradient(
@@ -32,8 +29,6 @@
 }
 
 .right {
-  display: flex;
-  align-items: center;
   gap: 10px;
 }
 

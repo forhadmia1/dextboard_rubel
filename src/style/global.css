@@ -10,7 +10,7 @@ body {
 }
 
 .left-area {
-  width: 236px;
+  width: 220px;
   border-radius: 0px 12px 12px 0px;
   padding: 35px 22px;
   background: linear-gradient(
@@ -72,8 +72,8 @@ body {
 .right-area {
   background: linear-gradient(180deg, #323245 0%, #282f49 100%);
   width: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .card-background {
@@ -96,4 +96,13 @@ body {
 .link-btn:hover {
   background: linear-gradient(115.7deg, #0bb6d5 23.5%, #0085ff 86.42%);
   border-radius: 6px;
+}
+
+@media only screen and (max-width: 640px) {
+  .left-area {
+    background: #0bb6d5;
+  }
+  .single-side-menu {
+    color: white;
+  }
 }

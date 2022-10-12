@@ -1,5 +1,4 @@
 import React from 'react';
-import vector from '../../images/11865 1.png'
 import erther from '../../images/etherscan-logo-freelogovectors 1.png'
 
 const LivepairTableRow = () => {

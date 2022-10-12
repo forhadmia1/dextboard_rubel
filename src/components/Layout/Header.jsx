@@ -7,9 +7,9 @@ import bottomArrow from "../../images/downarrow.svg";
 import { Link } from "react-router-dom";
 import "../../style/header.css";
 
-function Header() {
+function Header({ setIsopen, isOpen }) {
   return (
-    <header className="header">
+    <header className="header flex justify-between">
       <div>
         <div class="flex items-center input-field gap-3">
           <span>
@@ -22,7 +22,19 @@ function Header() {
           />
         </div>
       </div>
-      <div className="right">
+      <div className="md:hidden">
+        {!isOpen ? <div onClick={() => setIsopen(true)}>
+          <svg viewBox="0 0 100 80" width="40" height="40">
+            <rect width="100" height="20"></rect>
+            <rect y="30" width="100" height="20"></rect>
+            <rect y="60" width="100" height="20"></rect>
+          </svg>
+        </div> :
+          <div onClick={() => setIsopen(false)}>
+            <span className="text-3xl font-bold">X</span>
+          </div>}
+      </div>
+      <div className="right md:flex items-center hidden">
         <Link to="/" className="icon">
           <img src={star} alt="" />
         </Link>

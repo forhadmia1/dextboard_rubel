@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from "../images/logo.png";
 import img1 from "../images/side-img.png";
 import grid from "../images/grid.svg";
@@ -15,6 +15,7 @@ import { Link, Outlet } from 'react-router-dom';
 import Header from '../components/Layout/Header';
 
 const Home = () => {
+    const [isOpen, setIsopen] = useState(false)
     const sideMenu = [
         { icon: grid, link: "/dextboard", text: "DEXTboard" },
         { icon: roket, link: "/livenewpair", text: "Live new Pair" },
@@ -28,8 +29,8 @@ const Home = () => {
         { icon: youtube, link: "/", text: "DEXtool Academy" },
     ];
     return (
-        <div className="layout">
-            <div className="left-area">
+        <div className="layout relative">
+            <div className={`left-area  md:static absolute ${isOpen ? 'left-0' : '-left-full'} `}>
                 <div className="left-container">
                     <div className="text-center mb-4">
                         <img src={logo} alt="" />
@@ -64,7 +65,10 @@ const Home = () => {
                 </div>
             </div>
             <div className="right-area">
-                <Header />
+                <Header
+                    isOpen={isOpen}
+                    setIsopen={setIsopen}
+                />
                 <Outlet />
             </div>
         </div>

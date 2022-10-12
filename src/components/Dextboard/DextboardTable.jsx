@@ -6,7 +6,7 @@ const DextboardTable = () => {
     const row = [1, 2, 3, 4, 5]
     return (
         <div className='mt-5'>
-            <table className='card-background w-full text-sm text-[#00E6FD] border-collapse border-red-200'>
+            <table className='card-background w-full text-[10px] text-[#00E6FD] border-collapse border-red-200'>
                 <thead>
                     <tr className='table-row'>
                         <th>

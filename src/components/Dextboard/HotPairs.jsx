@@ -4,10 +4,10 @@ const HotPairs = () => {
     return (
         <div className='card-background px-[14px] py-[22px]'>
             <div className='flex justify-between items-center'>
-                <h2 className='text-[16px] font-semibold text-[#00E6FD]'>Daily Gainers</h2>
+                <h2 className='text-[12px] font-semibold text-[#00E6FD]'>Daily Gainers</h2>
             </div>
             <div className='mt-6 flex justify-between'>
-                <div className='text-sm'>
+                <div className='text-[10px]'>
                     <div className='flex items-center gap-2'>
                         <div className='bg-yellow-400 w-5 h-5 rounded-full flex justify-center items-center'>
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">

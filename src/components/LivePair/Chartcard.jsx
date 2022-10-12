@@ -5,8 +5,8 @@ import chart from '../../images/Untitled-2 1.png'
 
 const Chartcard = () => {
     return (
-        <div className='p-6 card-background'>
-            <div className='flex justify-between mt-5'>
+        <div className='p-6 card-background text-[12px]'>
+            <div className='flex flex-col md:flex-row gap-2 justify-between mt-5'>
                 <div>
                     <div className='flex items-center gap-1 -ml-3'>
                         <img src={vector} alt="" />
