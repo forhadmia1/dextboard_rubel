@@ -6,6 +6,7 @@ import HotPairs from '../components/Dextboard/HotPairs';
 import RecentlyUpdateSocials from '../components/Dextboard/RecentlyUpdateSocials';
 import rectengle1 from '../images/Rectangle 31.jpg'
 import rectengle2 from '../images/Rectangle 38.jpg'
+import rectengle3 from '../images/Rectangle 30.jpg'
 
 const Dextboard = () => {
     const [toggle, setToggle] = useState(false)
@@ -77,7 +78,7 @@ const Dextboard = () => {
                                 <p className='text-[#00E6FD]'>DEXTools Latest Release</p>
                                 <p className='text-white'>Latest changes in Version 2.3.4.0</p>
                             </div>
-                            <button className='btn-background px-4'>View Details</button>
+                            <button className='btn-background w-28'>View Details</button>
                         </div>
                     </div>
                     <div className='card-background p-2 text-sm mt-5'>
@@ -87,7 +88,27 @@ const Dextboard = () => {
                                 <p className='text-[#00E6FD]'>Sponser</p>
                                 <p className='text-white'>Glactic Quadrant</p>
                             </div>
-                            <button className='btn-background px-4'>View Details</button>
+                            <button className='btn-background w-28'>View Details</button>
+                        </div>
+                    </div>
+                    <div className='card-background p-2 text-sm mt-5'>
+                        <div className='relative'>
+                            <img className='rounded-lg' src={rectengle3} alt="" />
+                            <div className='w-16 h-16 bg-black opacity-80 flex justify-center items-center rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
+                                <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.1045 7.5479L2.74732 0.231881C1.66205 -0.36226 0 0.214303 0 1.68383V16.3123C0 17.6307 1.54442 18.4252 2.74732 17.7643L16.1045 10.4518C17.296 9.80141 17.2998 8.19829 16.1045 7.5479Z" fill="white" />
+                                </svg>
+                            </div>
+                            <div className='bg-black opacity-80 p-1 w-14 flex justify-center absolute -bottom-2 right-2 rounded'>
+                                <span className='text-white'>10.08</span>
+                            </div>
+                        </div>
+                        <div className='mt-3 flex justify-between'>
+                            <div>
+                                <p className='text-[#00E6FD]'>DEXTools Academy</p>
+                                <p className='text-white'>Ethereum Merge Explained</p>
+                            </div>
+                            <button className='btn-background w-28'>See more</button>
                         </div>
                     </div>
                 </div>
