@@ -7,6 +7,7 @@ import RecentlyUpdateSocials from '../components/Dextboard/RecentlyUpdateSocials
 import rectengle1 from '../images/Rectangle 31.jpg'
 import rectengle2 from '../images/Rectangle 38.jpg'
 import rectengle3 from '../images/Rectangle 30.jpg'
+import DextboardTable from '../components/Dextboard/DextboardTable';
 
 const Dextboard = () => {
     const [toggle, setToggle] = useState(false)
@@ -68,6 +69,9 @@ const Dextboard = () => {
                                 </svg>
                             </div>
                         </div>
+                    </div>
+                    <div>
+                        <DextboardTable />
                     </div>
                 </div>
                 <div>
