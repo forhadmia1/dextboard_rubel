@@ -10,16 +10,16 @@ const PairExplorer = () => {
     const cards = [1, 2, 3]
     return (
         <div className='mt-5'>
-            <div className='grid md:grid-cols-3 grid-cols-1 gap-5'>
+            <div className='grid lg:grid-cols-3 grid-cols-1 gap-5'>
                 {
                     cards.map(card => <Hotcard />)
                 }
             </div>
-            <div className='grid md:grid-cols-4 grid-cols-1 mt-5 gap-5'>
+            <div className='grid lg:grid-cols-4 grid-cols-1 mt-5 gap-5'>
                 <div className='col-span-3'>
                     <Chartcard />
                     <div className='mt-5 flex flex-col md:flex-row justify-between  gap-2'>
-                        <div className='flex card-background text-[12px] text-white gap-8 items-center px-5 py-3'>
+                        <div className='flex flex-col md:flex-row card-background text-[12px] text-white gap-8 items-center px-5 py-3'>
                             <Link className="link-btn">Pairs</Link>
                             <Link className='link-btn'>Daily Gainers</Link>
                             <Link className='link-btn'>Daily Losers</Link>
@@ -120,7 +120,7 @@ const PairExplorer = () => {
                         <p className='text-[#9DA9C7] text-center mt-5 text-[12px]'>Powered by <span className='text-[#00E6FD]'>KyberSwap.com</span></p>
                     </div>
                     <div className='card-background p-2 text-sm mt-5'>
-                        <img className='card-background' src={rectangle} alt="" />
+                        <img className='card-background w-full' src={rectangle} alt="" />
                         <div className='mt-3 flex justify-between'>
                             <div className='text-[12px]'>
                                 <p className='text-[#00E6FD]'>BC.Game</p>

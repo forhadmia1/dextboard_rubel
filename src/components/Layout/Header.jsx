@@ -22,7 +22,7 @@ function Header({ setIsopen, isOpen }) {
           />
         </div>
       </div>
-      <div className="md:hidden">
+      <div className="lg:hidden">
         {!isOpen ? <div onClick={() => setIsopen(true)}>
           <svg viewBox="0 0 100 80" width="40" height="40">
             <rect width="100" height="20"></rect>
@@ -34,7 +34,7 @@ function Header({ setIsopen, isOpen }) {
             <span className="text-3xl font-bold">X</span>
           </div>}
       </div>
-      <div className="right md:flex items-center hidden">
+      <div className="right lg:flex items-center hidden">
         <Link to="/" className="icon">
           <img src={star} alt="" />
         </Link>

@@ -30,7 +30,7 @@ const Home = () => {
     ];
     return (
         <div className="layout relative">
-            <div className={`left-area  md:static absolute ${isOpen ? 'left-0' : '-left-full'} `}>
+            <div className={`left-area  lg:static absolute ${isOpen ? 'left-0' : '-left-full'} `}>
                 <div className="left-container">
                     <div className="text-center mb-4">
                         <img src={logo} alt="" />

@@ -8,7 +8,7 @@ const LiveNewPair = () => {
 
     return (
         <div>
-            <div className='grid md:grid-cols-3 grid-cols-1 gap-2 mt-5'>
+            <div className='grid lg:grid-cols-3  grid-cols-1 gap-2 mt-5'>
                 {
                     cards.map(card => <Hotcard />)
                 }

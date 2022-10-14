@@ -30,15 +30,15 @@ const Dextboard = () => {
                     </label>
                 </div>
             </div>
-            <div className='grid md:grid-cols-4 grid-cols-1  gap-5'>
+            <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  gap-5'>
                 <DailyGainers />
                 <DailyLosers />
                 <RecentlyUpdateSocials />
                 <HotPairs />
             </div>
-            <div className='grid md:grid-cols-4 grid-cols-1 mt-5 gap-5 '>
+            <div className='grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 mt-5 gap-5 '>
                 <div className='col-span-3'>
-                    <div className='flex flex-col md:flex-row justify-between'>
+                    <div className='flex flex-col lg:flex-row gap-5 justify-between'>
                         <div className='flex card-background text-[10px] text-white gap-2 items-center px-3 py-2'>
                             <Link className='link-btn'>Pairs</Link>
                             <Link className='link-btn'>Daily Gainers</Link>
@@ -70,13 +70,13 @@ const Dextboard = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='overflow-x-scroll md:overflow-hidden'>
+                    <div className='overflow-x-scroll lg:overflow-hidden'>
                         <DextboardTable />
                     </div>
                 </div>
-                <div className='ml-5 md:ml-0'>
+                <div className='ml-5 md:ml-0 lg:col-auto md:col-span-3 md:grid-cols-3  grid lg:grid-cols-1 grid-cols-1 gap-5'>
                     <div className='card-background p-2 text-[10px]'>
-                        <img className='rounded-lg' src={rectengle1} alt="" />
+                        <img className='rounded-lg w-full' src={rectengle1} alt="" />
                         <div className='mt-3 flex justify-between'>
                             <div>
                                 <p className='text-[#00E6FD]'>DEXTools Latest Release</p>
@@ -85,8 +85,8 @@ const Dextboard = () => {
                             <button className='btn-background w-28'>View Details</button>
                         </div>
                     </div>
-                    <div className='card-background p-2 text-[10px] mt-5'>
-                        <img className='rounded-lg' src={rectengle2} alt="" />
+                    <div className='card-background p-2 text-[10px] lg:mt-5'>
+                        <img className='rounded-lg w-full' src={rectengle2} alt="" />
                         <div className='mt-3 flex justify-between'>
                             <div>
                                 <p className='text-[#00E6FD]'>Sponser</p>
@@ -95,9 +95,9 @@ const Dextboard = () => {
                             <button className='btn-background w-28'>View Details</button>
                         </div>
                     </div>
-                    <div className='card-background p-2 text-[10px] mt-5'>
+                    <div className='card-background p-2 text-[10px] lg:mt-5'>
                         <div className='relative'>
-                            <img className='rounded-lg' src={rectengle3} alt="" />
+                            <img className='rounded-lg w-full' src={rectengle3} alt="" />
                             <div className='w-16 h-16 bg-black opacity-80 flex justify-center items-center rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
                                 <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M16.1045 7.5479L2.74732 0.231881C1.66205 -0.36226 0 0.214303 0 1.68383V16.3123C0 17.6307 1.54442 18.4252 2.74732 17.7643L16.1045 10.4518C17.296 9.80141 17.2998 8.19829 16.1045 7.5479Z" fill="white" />
