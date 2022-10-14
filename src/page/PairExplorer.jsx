@@ -41,11 +41,11 @@ const PairExplorer = () => {
                         <div className='flex'>
                             <div className='flex justify-center flex-col items-center'>
                                 <p className='text-[#00E6FD]'>Swap</p>
-                                <div className='w-32 bg-[#00E6FD] h-[4px] rounded'></div>
+                                <div className='w-20 bg-[#00E6FD] h-[4px] rounded'></div>
                             </div>
                             <div className='flex justify-center flex-col items-center'>
                                 <p className='text-[#9DA9C7]'>Pool Info</p>
-                                <div className='w-32 bg-[#9DA9C7] h-[4px] rounded'></div>
+                                <div className='w-20 bg-[#9DA9C7] h-[4px] rounded'></div>
                             </div>
                         </div>
                     </div>

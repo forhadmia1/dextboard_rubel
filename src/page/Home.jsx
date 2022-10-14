@@ -29,7 +29,7 @@ const Home = () => {
         { icon: youtube, link: "/", text: "DEXtool Academy" },
     ];
     return (
-        <div className="layout relative">
+        <div className="layout relative min-h-screen">
             <div className={`left-area  lg:static absolute ${isOpen ? 'left-0' : '-left-full'} `}>
                 <div className="left-container">
                     <div className="text-center mb-4">
