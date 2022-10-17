@@ -15,7 +15,7 @@ const PairExplorer = () => {
                     cards.map(card => <Hotcard />)
                 }
             </div>
-            <div className='grid lg:grid-cols-4 grid-cols-1 mt-5 gap-5'>
+            <div className='grid lg:grid-cols-4 grid-cols-1 mt-5 lg:gap-5'>
                 <div className='col-span-3'>
                     <Chartcard />
                     <div className='mt-5 flex flex-col md:flex-row justify-between  gap-2'>
@@ -36,7 +36,7 @@ const PairExplorer = () => {
                         <PairExplorerTable />
                     </div>
                 </div>
-                <div >
+                <div className='mt-5 lg:mt-0'>
                     <div className='card-background flex p-5 justify-center '>
                         <div className='flex'>
                             <div className='flex justify-center flex-col items-center'>

@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import star from "../../images/star.svg";
 import setting from "../../images/setting.svg";
 import ether from "../../images/etheriaum.svg";
 import search from "../../images/searchIcon.svg";
 import bottomArrow from "../../images/downarrow.svg";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "../../style/header.css";
 
 function Header({ setIsopen, isOpen }) {
+  const location = useLocation()
+  useEffect(() => {
+    setIsopen(false)
+  }, [location.pathname])
+
   return (
     <header className="header flex justify-between">
       <div>
